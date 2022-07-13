@@ -16,7 +16,7 @@ public class JavaConnection {
 
         try {
             con = DriverManager.getConnection(connectionString.append(dataBaseName).append(connectionStringAdds).toString(), userName, password);
-            if (con != null) System.out.println("Connection successfully!");
+
         } catch (Exception e) {
             System.out.println("An error has occurred" + e);
         }
